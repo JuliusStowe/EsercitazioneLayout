@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.containerTop{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    height: 50%;
+    width: 80%;
+}
+.containerBottom{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    height: 50%;
+    width: 80%;
+    flex-direction: row-reverse;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "due tre"
+        "qua cin";
+    flex: 3.5;
+}
+.item1,.item2,.item3,.item4,.item5{
+    display: flex;
+    flex:1;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    background-color: rgb(255, 98, 0);
+}
+.item1{
+    flex:2;
+    align-items: normal;
+    padding: 30px;
+}
+.item2{grid-area: due;}
+.item3{grid-area: tre;}
+.item4{grid-area: qua;}
+.item5{grid-area: cin;}
